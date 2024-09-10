@@ -10,7 +10,8 @@ OPMG 1 Operations Management
 
 ## Definitions
 
-Let $L$ be the inventory, $\lambda$ be the flow rate of inventory, and $w$ be the wait time.
+Let $L$ be the inventory, $\lambda$ be the flow rate of inventory, and $w$ be
+the wait time.
 
 Then, by Little's law, we have:
 
@@ -32,7 +33,7 @@ We can apply Little's law.
 
 $$L=\lambda w,$$
 
-$$L=\left(450\,\frac{\text{visitors}}{\text{h}}\right)(1.5\text{ h}+0.5\text{h}),$$
+$$L=\left(450~\frac{\text{visitors}}{\text{h}}\right)(1.5\text{ h}+0.5\text{ h}),$$
 
 $$L=\left(\frac{450\text{ visitors}}{1\text{ h}}\right)(2\text{ h}),$$
 
@@ -61,7 +62,7 @@ $$\lambda_1=\frac{12\text{ patients}}{15\text{ min}}.$$
 
 For the waiting process, let $L_2$ denote the maximum inventory, $\lambda_2$
 denote the capacity, and $w_2$ denote the average wait time. The capacity is
-limited by the capacity of the check-in process; thus, $\lambda_1=\lambda_2$.
+limited by the capacity of the check-in process, so $\lambda_2=\lambda_1$.
 
 $$L_2=\lambda_1w_2,$$
 
