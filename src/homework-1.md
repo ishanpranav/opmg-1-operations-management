@@ -22,7 +22,7 @@ $$L=\lambda w.$$
 > Draw a process flow diagram for your favorite coffee shop. List the relevant
 > inputs, activities, and outputs in three columns.
 
-![Process flow diagram](images/homework-1-question-1.png "Process flow diagram for Caffe Reggio")
+![Process flow diagram](../images/homework-1-1.png "Process flow diagram for Caffe Reggio")
 
 | Inputs    | Outputs             | Activities |
 | --------- | ------------------- | ---------- |
