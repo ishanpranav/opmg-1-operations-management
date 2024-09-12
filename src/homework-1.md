@@ -24,12 +24,12 @@ $$L=\lambda w.$$
 
 ![Process flow diagram](../images/homework-1-1.png "Process flow diagram for Caffe Reggio")
 
-| Inputs    | Outputs             | Activities |
-| --------- | ------------------- | ---------- |
+| Inputs | Outputs | Activities |
+| ------ | ------- | ---------- |
 | Customers | Customers (satisfied) | Choose seat |
 | | | Give order |
 | | | Receive food & eat |
-| | | Pay | 
+| | | Pay |
 
 ## Question 2
 
