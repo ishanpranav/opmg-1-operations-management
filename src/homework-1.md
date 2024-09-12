@@ -22,6 +22,15 @@ $$L=\lambda w.$$
 > Draw a process flow diagram for your favorite coffee shop. List the relevant
 > inputs, activities, and outputs in three columns.
 
+![Process flow diagram](images/homework-1-question-1.png "Process flow diagram for Caffe Reggio")
+
+| Inputs    | Outputs             | Activities |
+| --------- | ------------------- | ---------- |
+| Customers | Customers (satisfied) | Choose seat |
+| | | Give order |
+| | | Receive food & eat |
+| | | Pay | 
+
 ## Question 2
 
 > Suppose that 450 visitors enter a carnival every hour. The visitors spend 90
