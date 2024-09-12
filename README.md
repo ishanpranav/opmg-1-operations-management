@@ -1,3 +1,8 @@
 # Operations Management
 
-A collection of problem set solutions for the NYU OPMG 1 Operations Management course.
+A collection of problem set solutions for the NYU OPMG 1 Operations Management
+course.
+
+## Contents
+
+- [Homework 1](https://ishanpranav.github.io/opmg-1-operations-management/homework-1)
