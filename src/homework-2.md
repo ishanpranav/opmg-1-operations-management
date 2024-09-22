@@ -66,16 +66,14 @@ Let $\rho$ represent the utilization.
 > Assuming that the furniture factory is operating at its maximum capacity, what
 > is the profit per hour after paying Tom, Abby and Issac their salaries?
 
-| Income statement | | $ per hour |
-|---|---|------------|
-| __Revenues__ | | __1,050__ |
+| Income statement | $ per hour |
+|---|-----------:|
+| __Revenues__ | __1,050__ |
 | Raw materials expense | | 600 |
-| Direct labor expenses | | |
-| | Tom | 18 |
-| | Abby | 15 |
-| | Issac | 8 |
-| Direct labor expense | | |
-| __Cost of goods sold__ | | __641__ |
-| __Gross profit__ | | __409__ |
+| Direct labor expense - Tom | 18 |
+| Direct labor expense - Abby | 15 |
+| Direct labor expense - Issac | 8 |
+| __Cost of goods sold__ | __641__ |
+| __Gross profit__ | __409__ |
 
 The gross profit is $409 per hour.
