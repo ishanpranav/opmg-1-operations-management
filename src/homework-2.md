@@ -69,7 +69,7 @@ Let $\rho$ represent the utilization.
 | Income statement | $ per hour |
 |---|-----------:|
 | __Revenues__ | __1,050__ |
-| Raw materials expense | | 600 |
+| Raw materials expense | 600 |
 | Direct labor expense - Tom | 18 |
 | Direct labor expense - Abby | 15 |
 | Direct labor expense - Issac | 8 |
