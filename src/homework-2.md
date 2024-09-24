@@ -15,6 +15,11 @@ OPMG 1 Operations Management
 > minimum amount of time that it will take Kristen and her roommate to fill a
 > rush order of 2 dozen cookies? Use a Gantt chart to find your answer.
 
+![Gantt chart](../images/homework-2-1.png "Gantt chart for Kristen's bakery")
+
+Under the new requirements, the minimum amount of time to fill a rush order of 2
+dozen cookies is 42 minutes.
+
 ## Question 2
 
 > Suppose that Tom, Abby, and Issac are working at a furniture workshop. The
@@ -31,18 +36,17 @@ OPMG 1 Operations Management
 
 Let $t$ represent the cycle time and $\lambda$ represent the capacity.
 
-- __Cutting wood:__ We have $t=8~\frac{\text{min}}{\text{piece}}$. Then $\lambda=\frac{1}{t}=\frac{1\text{ piece}}{8\text{ min}}\cdot\frac{60\text{ min}}{1\text{ h}}=7.5~\frac{\text{pieces}}{\text{h}}$.
-- __Assembling frame:__ We have $t=6~\frac{\text{min}}{\text{piece}}$. Then $\lambda=\frac{1}{t}=\frac{1\text{ piece}}{6\text{ min}}\cdot\frac{60\text{ min}}{1\text{ h}}=10~\frac{\text{pieces}}{\text{h}}$.
-- __Adding cushion:__ Similarly, $\lambda=10~\frac{\text{pieces}}{\text{h}}.$
-- __Adding finishing touches:__ We have $t=4~\frac{\text{min}}{\text{piece}}$. Then $\lambda=\frac{1}{t}=\frac{1\text{ piece}}{4\text{ min}}\cdot\frac{60\text{ min}}{1\text{ h}}=15~\frac{\text{pieces}}{\text{h}}$.
+- __Tom:__ We have $t=8~\frac{\text{min}}{\text{piece}}$. Then $\lambda=\frac{1}{t}=\frac{1\text{ piece}}{8\text{ min}}\cdot\frac{60\text{ min}}{1\text{ h}}=7.5~\frac{\text{pieces}}{\text{h}}$.
+- __Abby:__ We have $t=(6+4)~\frac{\text{min}}{\text{piece}}$. Then $\lambda=\frac{1}{t}=\frac{1\text{ piece}}{10\text{ min}}\cdot\frac{60\text{ min}}{1\text{ h}}=6~\frac{\text{pieces}}{\text{h}}$.
+- __Isaac:__ We have $t=6~\frac{\text{min}}{\text{piece}}$. Then $\lambda=\frac{1}{t}=\frac{1\text{ piece}}{6\text{ min}}\cdot\frac{60\text{ min}}{1\text{ h}}=10~\frac{\text{pieces}}{\text{h}}$.
 
 ### Question 2 Part B
 
 > What is the bottleneck of the process and what is the capacity of the process?
 
-The bottleneck of the process is the "cutting wood" resource, since it has the
-lowest capacity. Since the capacity of the process is limited by its bottleneck,
-the capacity of the process is $\lambda^*=7.5~\frac{\text{pieces}}{\text{h}}$.
+The bottleneck of the process is Abby, since she has the lowest capacity. Since 
+the capacity of the process is limited by its bottleneck, the capacity of the
+process is $\lambda^*=6~\frac{\text{pieces}}{\text{h}}$.
 
 ### Question 2 Part C
 
@@ -51,10 +55,9 @@ the capacity of the process is $\lambda^*=7.5~\frac{\text{pieces}}{\text{h}}$.
 
 Let $\rho$ represent the utilization.
 
-- __Cutting wood:__ Since "cutting wood" is the bottleneck process, it has $\rho=100\%$.
-- __Assembling frame:__ We have $\rho=t\lambda^*=8~\frac{\text{min}}{\text{piece}}\cdot 7.5~\frac{\text{pieces}}{\text{h}}=45~\frac{\text{min}}{\text{h}}=75\%$.
-- __Adding cushion:__ Similarly, we have $\rho=75\%$.
-- __Adding finishing touches:__ We have $\rho=t\lambda^*=4~\frac{\text{min}}{\text{piece}}\cdot 7.5~\frac{\text{pieces}}{\text{h}}=30~\frac{\text{min}}{\text{h}}=50\%$.
+- __Tom:__  We have $\rho=t\lambda^*=8~\frac{\text{min}}{\text{piece}}\cdot 6~\frac{\text{pieces}}{\text{h}}=48~\frac{\text{min}}{\text{h}}=80\%$.
+- __Abby:__ Since Abby is the bottleneck process, she has $\rho=100\%$.
+- __Isaac:__ We have $\rho=t\lambda^*=6~\frac{\text{min}}{\text{piece}}\cdot 6~\frac{\text{pieces}}{\text{h}}=36~\frac{\text{min}}{\text{h}}=60\%$.
 
 ### Question 2 Part D
 
@@ -67,13 +70,13 @@ Let $\rho$ represent the utilization.
 > is the profit per hour after paying Tom, Abby and Issac their salaries?
 
 | Income statement | $ per hour |
-|---|-----------:|
-| __Revenues__ | __1,050__ |
-| Raw materials expense | 600 |
-| Direct labor expense - Tom | 18 |
-| Direct labor expense - Abby | 15 |
-| Direct labor expense - Issac | 8 |
-| __Cost of goods sold__ | __641__ |
-| __Gross profit__ | __409__ |
+|------------------|-----------:|
+| __Revenues__ | __840.00__ |
+| Raw materials expense | 480.00 |
+| Direct labor expense - Tom | 14.40 |
+| Direct labor expense - Abby | 20.00 |
+| Direct labor expense - Issac | 9.60 |
+| __Cost of goods sold__ | __524.00__ |
+| __Gross profit__ | __316.00__ |
 
-The gross profit is $409 per hour.
+The gross profit is $316.00 per hour.
