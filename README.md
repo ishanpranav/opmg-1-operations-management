@@ -6,3 +6,4 @@ course.
 ## Contents
 
 - [Homework 1](https://ishanpranav.github.io/opmg-1-operations-management/homework-1)
+- [Homework 2](https://ishanpranav.github.io/opmg-1-operations-management/homework-2)
