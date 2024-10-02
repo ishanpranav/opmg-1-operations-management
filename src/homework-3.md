@@ -35,6 +35,14 @@ $$W_S=W_Q+\frac{1}{\mu}.$$
 
 $$L_S=\lambda W_S.$$
 
+__M/M/1 system.__
+
+Consider a single-server system (M/M/1) with a single queue $Q$ with length
+$L_Q$. Let $\lambda$ denote the arrival rate and $\mu$ denote the service rate.
+Then:
+
+$$L_Q=\frac{\lambda^2}{\mu(\mu-\lambda)}.$$
+
 ## Introduction
 
 > Customers arrive at the checkout area of New Navy with the inter-arrival time
@@ -87,9 +95,9 @@ The average number of customers waiting in the queue to be checked out is about
 
 Since service time is exponentially distributed with rate parameter $\mu$, the
 average service time is
-$\frac{1}{\mu}=\frac{1}{20~\frac{\text{customers}}{\text{h}}}=0.05~\frac{\text{h}}{\text{customer}}=12~\frac{\text{min}}{\text{customer}}$.
+$\frac{1}{\mu}=\frac{1}{20~\frac{\text{customers}}{\text{h}}}=0.05~\frac{\text{h}}{\text{customer}}=3~\frac{\text{min}}{\text{customer}}$.
 
-The average service time is 12 minutes per customer.
+The average service time is 3 minutes per customer.
 
 ## Part D
 
@@ -117,6 +125,30 @@ $$L_S=L_Q+\lambda\cdot\frac{1}{\mu}.$$
 From Part B, we have $L_Q\approx 0.279\dots$, and from Part C, we have
 $\frac{1}{\mu}=12~\frac{\text{min}}{\text{customer}}$.
 
-$$L_S\approx(0.279\dots)+\frac{100\text{ customers}}{60\text{ min}}\cdot12~\frac{\text{min}}{\text{customer}}\approx 20.279\dots\text{ customers}.$$
+$$L_S\approx(0.279\dots)+\frac{100\text{ customers}}{60\text{ min}}\cdot 3~\frac{\text{min}}{\text{customer}}\approx 5.279\dots\text{ customers}.$$
 
-The average total number of customers in the checkout area is about 20.28.
+The average total number of customers in the checkout area is about 5.28.
+
+## Part E
+
+> Suppose now that the New Navy decides to replace the single common line for
+> its customers with 8 separate lines, one line in front of each of the 8
+> cashiers. What is now the average number of customers waiting to be checked
+> out? This only includes the customers who are waiting to be checked out
+> (not those customers being served).
+
+We can model this as a set of 8 M/M/1 systems with arrival rate
+$\lambda'=\frac{\lambda}{8}=12.5~\frac{\text{customers}}{\text{h}}$. Let $L_q$
+represent the length of each smaller queue $q$. The average number of customers
+waiting to be checked out is $8L_q$.
+
+Of course,
+
+$$\begin{align*}
+L_q&=\frac{\lambda^2}{\mu(\mu-\lambda)}\\
+8L_q&=8\cdot\frac{\left(12.5~\frac{\text{customers}}{\text{h}}\right)^2}{20~\frac{\text{customers}}{\text{h}}\cdot(20~\frac{\text{customers}}{\text{h}}-12.5~\frac{\text{customers}}{\text{h}})}\\
+&=8.\overline{3}.
+\end{align*}$$
+
+In this system, the average number of customers waiting to be checked out is
+about 8.33.
