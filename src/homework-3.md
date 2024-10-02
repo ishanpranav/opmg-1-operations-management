@@ -123,7 +123,7 @@ Intuitively,
 $$L_S=L_Q+\lambda\cdot\frac{1}{\mu}.$$
 
 From Part B, we have $L_Q\approx 0.279\dots$, and from Part C, we have
-$\frac{1}{\mu}=12~\frac{\text{min}}{\text{customer}}$.
+$\frac{1}{\mu}=3~\frac{\text{min}}{\text{customer}}$.
 
 $$L_S\approx(0.279\dots)+\frac{100\text{ customers}}{60\text{ min}}\cdot 3~\frac{\text{min}}{\text{customer}}\approx 5.279\dots\text{ customers}.$$
 
