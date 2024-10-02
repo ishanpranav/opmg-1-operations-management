@@ -145,7 +145,7 @@ waiting to be checked out is $8L_q$.
 Of course,
 
 $$\begin{align*}
-L_q&=\frac{\lambda^2}{\mu(\mu-\lambda)}\\
+L_q&=\frac{\lambda'^2}{\mu(\mu-\lambda')}\\
 8L_q&=8\cdot\frac{\left(12.5~\frac{\text{customers}}{\text{h}}\right)^2}{20~\frac{\text{customers}}{\text{h}}\cdot(20~\frac{\text{customers}}{\text{h}}-12.5~\frac{\text{customers}}{\text{h}})}\\
 &=8.\overline{3}.
 \end{align*}$$
