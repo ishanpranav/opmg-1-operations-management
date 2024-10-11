@@ -40,6 +40,7 @@ $$4x_1+3x_2\leq 120,$$
 $$2x_1+3x_2\leq 100,$$
 $$1.5x_1+2x_2\leq 80,$$
 $$x_1\leq 30,$$
+$$x_2\leq 50,$$
 $$x_1\geq 0,$$
 $$x_2\geq 0.$$
 
@@ -84,6 +85,7 @@ __Constraint classification.__
 | $2x_1+3x_2$ | $\leq 100$ | $(2\times 30)+(3\times 0)$ | $100$ | Binding | $0$ |
 | $1.5x_1+2x_2$ | $\leq 80$ | $(1.5\times 30)+(2\times 0)$ | $45$ | Non-binding | $35$ |
 | $x_1$ | $\leq 30$ | $30$ | $30$ | Binding | $0$ |
+| $x_2$ | $\leq 50$ | $0$ | $0$ | Non-binding | $50$ |
 | $x_1$ | $\geq 0$ | $30$ | $30$ | Non-binding | $30$ |
 | $x_2$ | $\geq 0$ | $0$ | $0$ | Binding | $0$ |
 
@@ -126,9 +128,9 @@ __Solution.__
 
 |   | $x_1$ | $x_2$ | $x_3$ |   |
 |:--|------:|------:|------:|--:|
-| __Objective $f$__ | 2.0 | 4.0 | 7.0 | |
+| __Objective__ | 2.0 | 4.0 | 7.0 | |
 | __Argument maxima__ | __2.0__ | __22.0__ | __7.5__ | |
-| __Maximize $f$__ | | | | __144.5__ |
+| __Maximize__ | | | | __144.5__ |
 
 Refer to the Microsoft Excel output below.
 
@@ -162,9 +164,9 @@ optimal number of small tiles increases from 2 to 8:
 
 |   | $x_1$ | $x_2$ | $x_3$ |   |
 |:--|------:|------:|------:|--:|
-| __Objective $f$__ | 5.0 | 4.0 | 7.0 | |
+| __Objective__ | 5.0 | 4.0 | 7.0 | |
 | __Argument maxima__ | __8.0__ | __28.0__ | __0.0__ | |
-| __Maximize $f$__ | | | | __152.0__ |
+| __Maximize__ | | | | __152.0__ |
 
 ### Question 2 Part C
 
