@@ -65,6 +65,8 @@ We have the optimal allocation $(x_1=30,x_2=0)$ with $f(x_1,x_2)=15000$.
 
 __Isoprofit lines method.__
 
+![Graphical representation of the isoprofit lines method](../images/homework-4-1.png "Isoprofit lines method")
+
 Since the objective function is of the form $f(x_1,x_2)=a_1x_1+a_2x_2$, its
 slope is of the form $-\frac{a_1}{a_2}$. For $f(x_1,x_2)=500x_1+350x_2$, the
 slope of the objective function is $-\frac{500}{350}=-\frac{10}{7}$. Therefore,
@@ -75,6 +77,8 @@ corner point iis $15000=500x_1+350x_2$. Thus $f$ is maximized when
 $f(x_1,x_2)=15000$. The point of tangency is $(x_1=30,x_2=0)$, so this is the
 optimal allocation and \$15,000 is the maximum profit.
 
+
+
 Using the optimal solution, we can classify the constraints.
 
 __Constraint classification.__
@@ -82,7 +86,7 @@ __Constraint classification.__
 | Expression | Constraint | Evaluation | Optimum | Type | Slack |
 |------------|------------|------------|:-------:|:----:|:-----:|
 | $4x_1+3x_2$ | $\leq 120$ | $(4\times 30)+(3\times 0)$ | $120$ | Binding | $0$ |
-| $2x_1+3x_2$ | $\leq 100$ | $(2\times 30)+(3\times 0)$ | $100$ | Binding | $0$ |
+| $2x_1+3x_2$ | $\leq 100$ | $(2\times 30)+(3\times 0)$ | $60$ | Non-binding | $40$ |
 | $1.5x_1+2x_2$ | $\leq 80$ | $(1.5\times 30)+(2\times 0)$ | $45$ | Non-binding | $35$ |
 | $x_1$ | $\leq 30$ | $30$ | $30$ | Binding | $0$ |
 | $x_2$ | $\leq 50$ | $0$ | $0$ | Non-binding | $50$ |
