@@ -77,8 +77,6 @@ corner point iis $15000=500x_1+350x_2$. Thus $f$ is maximized when
 $f(x_1,x_2)=15000$. The point of tangency is $(x_1=30,x_2=0)$, so this is the
 optimal allocation and \$15,000 is the maximum profit.
 
-
-
 Using the optimal solution, we can classify the constraints.
 
 __Constraint classification.__
