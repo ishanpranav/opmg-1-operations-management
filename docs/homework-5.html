@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Homework 5</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="homework-5">Homework 5</h1>
+<p>Ishan Pranav</p>
+<p>October 12, 2024</p>
+<p>Professor Divya Singhvi</p>
+<p>OPMG 1 Operations Management</p>
+<h2 id="question-1">Question 1</h2>
+<blockquote>
+<p>Fix-Em-Up Industries restores classic cars. Their chairman wants to create a
+project network diagram to plan future restoration jobs. The following
+activities are required to restore a car. First, workers must disassemble the
+car and catalog the parts. Next, they must reupholster the seats, rechrome the
+bumpers, paint the body panels and rebuild the engine. Each of these
+activities may begin once the car has been disassembled and the parts have
+been cataloged. After the workers have finished rechroming the bumpers and
+painting the body panels, they can reassemble the body. After the seats are
+reupholstered and the body has been reassembled, they can install the
+reupholstered seats. After the engine is rebuilt and the body has been
+reassembled, the rebuilt engine can be installed. The list of activities is
+given below. Construct the network diagram for Fix-Em-Up Industries using the
+Activity-on-Arc method discussed in class.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Activity</th>
+<th>Description</th>
+<th>Immediate predecessors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A</td>
+<td>Disassemble car &amp; catalog parts</td>
+<td>–</td>
+</tr>
+<tr>
+<td style="text-align:center">B</td>
+<td>Paint body panels</td>
+<td>A</td>
+</tr>
+<tr>
+<td style="text-align:center">C</td>
+<td>Rebuild engine</td>
+<td>A</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td>Rechrome bumpers</td>
+<td>A</td>
+</tr>
+<tr>
+<td style="text-align:center">E</td>
+<td>Reupholster seats</td>
+<td>A</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td>Reassemble body</td>
+<td>B, D</td>
+</tr>
+<tr>
+<td style="text-align:center">G</td>
+<td>Install reupholstered seats</td>
+<td>E, F</td>
+</tr>
+<tr>
+<td style="text-align:center">H</td>
+<td>Install rebuilt engine</td>
+<td>C, F</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://github.com/ishanpranav/opmg-1-operations-management/blob/master/images/homework-5.png?raw=true" alt="Network diagram" title="Network diagram for Fix-Em-Up Industries using the Activity-on-Arc method"></p>
+<h2 id="question-2">Question 2</h2>
+<blockquote>
+<p>NYC Real Estate is purchasing an old office building in order to renovate it.
+The renovation project consists of 7 activities which are given below. The
+duration of each activity is given in weeks and the precedence relationships
+among the activities are given as well.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Description</th>
+<th>Immediate predecessors</th>
+<th>Duration (weeks)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Secure financing</td>
+<td>–</td>
+<td>3</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Hire employees</td>
+<td>–</td>
+<td>7</td>
+</tr>
+<tr>
+<td>C</td>
+<td>Buy materials</td>
+<td>A</td>
+<td>5</td>
+</tr>
+<tr>
+<td>D</td>
+<td>Purchase property</td>
+<td>A</td>
+<td>3</td>
+</tr>
+<tr>
+<td>E</td>
+<td>Clean old building</td>
+<td>D</td>
+<td>2</td>
+</tr>
+<tr>
+<td>F</td>
+<td>Perform renovation</td>
+<td>B, C, E</td>
+<td>3</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Sign tenants</td>
+<td>D</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="question-2-part-a">Question 2 Part A</h3>
+<blockquote>
+<p>Draw the precedence diagram for this project.</p>
+</blockquote>
+<p><img src="https://github.com/ishanpranav/opmg-1-operations-management/blob/master/images/homework-5-2.png?raw=true" alt="Precedence diagram" title="Precedence diagram for NYC Real Estate"></p>
+<h3 id="question-2-part-b">Question 2 Part B</h3>
+<blockquote>
+<p>Using the critical path method learned in class, determine the earliest start,
+earliest finish, latest start and latest finish times of each activity. In
+addition, compute the slack of each activity.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Earliest start</th>
+<th>Earliest finish</th>
+<th>Latest start</th>
+<th>Latest finish</th>
+<th>Slack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0</td>
+<td>7</td>
+<td>3</td>
+<td>10</td>
+<td>3</td>
+</tr>
+<tr>
+<td>C</td>
+<td>3</td>
+<td>8</td>
+<td>5</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>D</td>
+<td>3</td>
+<td>6</td>
+<td>3</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>E</td>
+<td>6</td>
+<td>8</td>
+<td>8</td>
+<td>10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>F</td>
+<td>8</td>
+<td>11</td>
+<td>10</td>
+<td>13</td>
+<td>2</td>
+</tr>
+<tr>
+<td>G</td>
+<td>6</td>
+<td>13</td>
+<td>6</td>
+<td>13</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="question-2-part-c">Question 2 Part C</h3>
+<blockquote>
+<p>What is the minimum amount of time needed to complete the renovation project?
+Also, what are the critical activities and the critical path(s) of the
+project?</p>
+</blockquote>
+<p>The minimum time needed to complete the renovation project is 13 weeks.</p>
+<p>The critical activities are the activities with no slack: namely, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span>.</p>
+<p>The critical path is the path from the first node to the last node which
+includes only critical activities. Thus, the critical path is <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>D</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">A\to D\to G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span>.</p>
+<h3 id="question-2-part-d">Question 2 Part D</h3>
+<blockquote>
+<p>Suppose that due to market competition, NYC Real Estate would like to complete
+its renovation project within the next 9 weeks. For each week beyond the 9
+weeks deadline, it faces a $800 penalty. The following table details NYC Real
+Estate’s project crashing options.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Activity</th>
+<th style="text-align:center">Immediate predecessors</th>
+<th style="text-align:center">Normal duration (weeks)</th>
+<th style="text-align:center">Crash duration (weeks)</th>
+<th style="text-align:center">Normal cost ($)</th>
+<th style="text-align:center">Crash cost ($)</th>
+<th style="text-align:center">Crash cost ($/week)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">A</td>
+<td style="text-align:center">–</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1,300</td>
+<td style="text-align:center">2,150</td>
+<td style="text-align:center">850</td>
+</tr>
+<tr>
+<td style="text-align:center">B</td>
+<td style="text-align:center">–</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">800</td>
+<td style="text-align:center">1,700</td>
+<td style="text-align:center">450</td>
+</tr>
+<tr>
+<td style="text-align:center">C</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">2,000</td>
+<td style="text-align:center">2,000</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">D</td>
+<td style="text-align:center">A</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1,600</td>
+<td style="text-align:center">2,200</td>
+<td style="text-align:center">300</td>
+</tr>
+<tr>
+<td style="text-align:center">E</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1,500</td>
+<td style="text-align:center">1,750</td>
+<td style="text-align:center">250</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">B, C, E</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">1,000</td>
+<td style="text-align:center">2,000</td>
+<td style="text-align:center">500</td>
+</tr>
+<tr>
+<td style="text-align:center">G</td>
+<td style="text-align:center">D</td>
+<td style="text-align:center">7</td>
+<td style="text-align:center">3</td>
+<td style="text-align:center">2,200</td>
+<td style="text-align:center">3,800</td>
+<td style="text-align:center">400</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Using the greedy method learned in class, crash NYC Real Estate’s renovation
+project for as many weeks as it is profitable to do so. For each week of
+crashing, identify the activities to be crashed, the cost of crashing and the
+resulting critical path(s) after performing the crashing. If it no longer
+becomes profitable to crash the project, then clearly state why.</p>
+</blockquote>
+<p><strong>First week of crashing.</strong></p>
+<p>For the first week, we will crash activity <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, since it has the lowest
+marginal cost (crash cost per week). Of course, the marginal cost is $300, which
+is less than the weekly penalty of $800, so this is a profitable decision.</p>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Earliest start</th>
+<th>Earliest finish</th>
+<th>Latest start</th>
+<th>Latest finish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0</td>
+<td>7</td>
+<td>2</td>
+<td>9</td>
+</tr>
+<tr>
+<td>C</td>
+<td>3</td>
+<td>8</td>
+<td>4</td>
+<td>9</td>
+</tr>
+<tr>
+<td>D</td>
+<td>3</td>
+<td>5</td>
+<td>3</td>
+<td>5</td>
+</tr>
+<tr>
+<td>E</td>
+<td>5</td>
+<td>7</td>
+<td>7</td>
+<td>9</td>
+</tr>
+<tr>
+<td>F</td>
+<td>8</td>
+<td>11</td>
+<td>9</td>
+<td>12</td>
+</tr>
+<tr>
+<td>G</td>
+<td>5</td>
+<td>12</td>
+<td>5</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
+<p>The critical path remains <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>D</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">A\to D\to G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> and the new project duration is
+12 weeks.</p>
+<p><strong>Second week of crashing.</strong></p>
+<p>For the second week, we will crash activity <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, since it has the lowest
+marginal cost (crash cost per week). Of course, the marginal cost is $300, which
+is less than the weekly penalty of $800, so this is a profitable decision.</p>
+<table>
+<thead>
+<tr>
+<th>Activity</th>
+<th>Earliest start</th>
+<th>Earliest finish</th>
+<th>Latest start</th>
+<th>Latest finish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>0</td>
+<td>3</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>B</td>
+<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>8</td>
+</tr>
+<tr>
+<td>C</td>
+<td>3</td>
+<td>8</td>
+<td>3</td>
+<td>8</td>
+</tr>
+<tr>
+<td>D</td>
+<td>3</td>
+<td>4</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>E</td>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+</tr>
+<tr>
+<td>F</td>
+<td>8</td>
+<td>11</td>
+<td>8</td>
+<td>11</td>
+</tr>
+<tr>
+<td>G</td>
+<td>4</td>
+<td>11</td>
+<td>4</td>
+<td>11</td>
+</tr>
+</tbody>
+</table>
+<p>There are now two critical paths: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>D</mi><mo>→</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">A\to D\to G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>→</mo><mi>C</mi><mo>→</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">A\to C\to F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span>. The new project duration is 11 weeks.</p>
+<p><strong>Third week.</strong></p>
+<p>For the third week, we cannot crash <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span>, since it is already at its minimum
+duration (crash duration of 1). We also cannot crash <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span>, since is is already at its minimum duration (crash duration of 5).</p>
+<p>We may crash <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> or both <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> to reduce the total project duration.
+Crashing <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> costs $850 per week and crashing both <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi></mrow><annotation encoding="application/x-tex">F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span> costs
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">$</mi><mn>500</mn><mo>+</mo><mi mathvariant="normal">$</mi><mn>400</mn><mo>=</mo><mi mathvariant="normal">$</mi><mn>900</mn></mrow><annotation encoding="application/x-tex">\$500+\$400=\$900</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.0833em;"></span><span class="mord">$500</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">$400</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">$900</span></span></span></span>. In both cases, the marginal cost is greater than the
+marginal benefit from avoiding the weekly penalty of $800, so it is
+unprofitable to crash further in all cases.</p>
+<p>The total cost of crashing is $600 to crash <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> twice, which saves $1600 of
+penalties.</p>
+
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>
