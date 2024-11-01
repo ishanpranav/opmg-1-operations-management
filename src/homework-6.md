@@ -97,4 +97,4 @@ Assume that the length of the auto part is normally distributed.
 
 ### Question 3 Part B
 
-> Calculate $C_p$ and $C_pk$ for the process.
+> Calculate $C_p$ and $C_{pk}$ for the process.
