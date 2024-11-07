@@ -176,6 +176,45 @@ of defective smartphones, further suggesting that the process is out of control.
 
 Assume that the length of the auto part is normally distributed.
 
+**Sample mean.**
+
+$$\bar{x}=5\text{ in}.$$
+
+**Variance.**
+
+$$\sigma^2_{x}=0.28\text{ in}^2$$
+
+**Standard deviation.**
+
+$$\sigma_x=\sqrt{\sigma^2_x}\approx 0.5292\dots\text{ in}.$$
+
+**Number of standard deviations.**
+
+Let $\Phi^{-1}(p)$ for $p\in(0,1)$ denote the probit function, the inverse of
+the normal cumulative distribution function.
+
+$$z=\Phi^{-1}\left(1-\frac{1-99.90\%}{2}\right)=\Phi^{-1}(99.95\%)\approx 3.2905\dots$$
+
+**Lower specification limit.**
+
+$$\bar{x}-z\sigma\approx 5\text{ in}-(1.7412\dots\text{ in})\approx 3.2588\dots\text{in}.$$
+
+**Upper specification limit.**
+
+$$\bar{x}+z\sigma\approx 5\text{ in}+(1.7412\dots\text{ in})\approx 6.7412\dots\text{in}.$$
+
 ### Question 3 Part B
 
 > Calculate $C_p$ and $C_{pk}$ for the process.
+
+$$C_p=\frac{(\bar{x}+z\sigma)-(\bar{x}-z\sigma)}{6\sigma}=\frac{z}{3}\approx1.0968\dots$$
+
+$$\begin{align*}C_{pk}&=
+\min\left(\frac{(\bar{x}+z\sigma)-\bar{x}}{3\sigma},\frac{\bar{x}-(\bar{x}-z\sigma)}{3\sigma}\right)\\
+&=\min\left(\frac{z}{3},\frac{z}{3}\right)\\
+&=\frac{z}{3}\\
+&=C_p.
+\end{align*}$$
+
+Of course $C_p=C_{pk}\approx 1.0968\dots$ since the mean is centered within the
+specification range.
