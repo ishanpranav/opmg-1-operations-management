@@ -10,3 +10,4 @@ Management course.
 - [Homework 3](https://ishanpranav.github.io/opmg-1-operations-management/homework-3)
 - [Homework 4](https://ishanpranav.github.io/opmg-1-operations-management/homework-4)
 - [Homework 5](https://ishanpranav.github.io/opmg-1-operations-management/homework-5)
+- [Homework 6](https://ishanpranav.github.io/opmg-1-operations-management/homework-6)
