@@ -43,11 +43,11 @@ OPMG 1 Operations Management
 | 6 | 2.534 | 0 | 2.004 |
 | 10 | 3.078 | 0.233 | 1.777 |
 
-**Number of subgroups.**
+**Number of samples.**
 
 $$k=10.$$
 
-**Observations per subgroup.**
+**Observations per sample.**
 
 $$n=4.$$
 
@@ -101,28 +101,65 @@ outside the range determined by its upper control or lower control bound.
 > not. Every hour, Samsung samples 20 phones coming off of its production line
 > and obtains the following results.
 
-| Sample | Sample size | Number defective |
-|:------:|:-----------:|:----------------:|
-| 1 | 20 | 1 |
-| 2 | 20 | 6 |
-| 3 | 20 | 8 |
-| 4 | 20 | 3 |
-| 5 | 20 | 5 |
-| 6 | 20 | 14 |
-| 7 | 20 | 7 |
-| 8 | 20 | 18 |
-| 9 | 20 | 4 |
-| 10 | 20 | 6 |
+| Sample | Sample size | Number defective | $p$ |
+|:------:|:-----------:|:----------------:|:---:|
+| 1 | 20 | 1 | 0.05 |
+| 2 | 20 | 6 | 0.30 |
+| 3 | 20 | 8 | 0.40 |
+| 4 | 20 | 3 | 0.15 |
+| 5 | 20 | 5 | 0.25 |
+| 6 | 20 | 14 | 0.70 |
+| 7 | 20 | 7 | 0.35 |
+| 8 | 20 | 18 | 0.90 |
+| 9 | 20 | 4 | 0.20 |
+| 10 | 20 | 6 | 0.30 |
 
 ### Question 2 Part A
 
-> Calculate the upper and lower control limits for the $P$-chart associated with
+> Calculate the upper and lower control limits for the $p$-chart associated with
 > the above data. Use a $z$-value of $3$ in determining your control limits.
+
+**Number of samples.**
+
+$$k=10.$$
+
+**Observations per sample.**
+
+$$n=20.$$
+
+**Mean of proportions.**
+
+$$\bar{p}=\frac{1}{k}\sum_{i=1}^k{p_i}=0.36.$$
+
+**Standard deviation of proportions.**
+
+$$\sigma_p=\sqrt{\frac{\bar{p}(1-\bar{p})}{n}}\approx 0.1073\dots$$
+
+**Number of standard deviations.**
+
+$$z=3.$$
+
+**Lower control limit for proportion $p$.**
+
+$$\bar{p}-z\sigma_p\approx 0.0380\dots$$
+
+**Upper control limit for proportion $p$.**
+
+$$\bar{p}+z\sigma_p\approx 0.6820\dots$$
 
 ### Question 2 Part B
 
 > Determine whether or not the smartphone production process is in control. If
-> it is not in control, state what looks wrong on the $P$-chart.
+> it is not in control, state what looks wrong on the $p$-chart.
+
+The smartphone production process is out of control. We notice that in Samples 6
+and 8 the proportion of defective smartphones is above the upper control limit.
+
+![Sample proportions](../images/homework-6-2-2.png "Chart of sample proportions")
+
+From the $p$-chart, in addition to the two sample proportions visibly above
+their upper control limit, there appears to be a rising trend in the proportion
+of defective smartphones, further suggesting that the process is out of control.
 
 ## Question 3
 
