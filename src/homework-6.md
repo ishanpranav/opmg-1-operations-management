@@ -20,12 +20,12 @@ OPMG 1 Operations Management
 | 1 | 10.18 | 9.72 | 9.66 | 10.24 | 9.95 | 0.58 |
 | 2 | 10.30 | 9.64 | 10.07 | 9.57 | 9.90 | 0.73 |
 | 3 | 10.18 | 9.89 | 9.96 | 9.51 | 9.89 | 0.67 |
-| 4 | – | 10.03 | 9.74 | 9.55 | 9.91 | 0.75 |
+| 4 | **10.32** | 10.03 | 9.74 | 9.55 | 9.91 | 0.75 |
 | 5 | 10.28 | 9.97 | 9.75 | 9.70 | 9.93 | 0.58 |
 | 6 | 9.98 | 10.00 | 9.76 | 9.96 | 9.93 | 0.24 |
 | 7 | 9.80 | 9.93 | 9.88 | 9.74 | 9.84 | 0.19 |
 | 8 | 9.69 | 10.00 | 10.11 | 10.26 | 10.02 | 0.57 |
-| 9 | 9.93 | 9.53 | 10.06 | 9.60 | – | 0.53 |
+| 9 | 9.93 | 9.53 | 10.06 | 9.60 | **9.78** | 0.53 |
 | 10 | 10.15 | 9.66 | 9.70 | 10.27 | 9.95 | 0.61 |
 
 ### Question 1 Part A
@@ -43,12 +43,56 @@ OPMG 1 Operations Management
 | 6 | 2.534 | 0 | 2.004 |
 | 10 | 3.078 | 0.233 | 1.777 |
 
+**Number of subgroups.**
+
+$$k=10.$$
+
+**Observations per subgroup.**
+
+$$n=4.$$
+
+**Mean of means.**
+
+$$\bar{\bar{x}}=\frac{1}{k}\sum_{i=1}^k{\bar{x}_i}=\frac{1}{k\cdot n}\sum_{i=1}^k\sum_{j=1}^n{{x_i}_j}\approx 9.91\dots$$
+
+**Mean of ranges.**
+
+$$\bar{R}=\frac{1}{k}\sum_{i=1}^k{R_i}\approx 0.55\dots$$
+
+**Average range distribution scale parameter.**
+
+$$D_2\approx 2.059\dots$$
+
+**Lower control limit for mean $\bar{x}$.**
+
+$$\bar{\bar{x}}-\frac{3\bar{R}}{D_2\sqrt{n}}\approx(9.91\dots)-(0.40\dots)\approx 9.51\dots$$
+
+**Upper control limit for mean $\bar{x}$.**
+
+$$\bar{\bar{x}}+\frac{3\bar{R}}{D_2\sqrt{n}}\approx(9.91\dots)+(0.40\dots)\approx 10.31\dots$$
+
+**Lower control limit for range $R$.**
+
+$$D_3\bar{R}=0\times(0.55\dots)=0.$$
+
+**Upper control limit for range $R$.**
+
+$$D_4\bar{R}\approx 2.282\times(0.55\dots)\approx 1.25\dots$$
+
 ### Question 1 Part B
 
 > Plot the $\bar{x}$-chart and $R$-chart for Pepperidge Farm’s Goldfish
 > production process. Also determine whether or not Pepperidge Farm’s process of
 > making Goldfish is in control. If it is not in control, state what looks wrong
 > on either the $\bar{x}$-chart or $R$-chart.
+
+![Sample means](../images/homework-6-1-2-1.png "Chart of sample means")
+
+![Sample ranges](../images/homework-6-1-2-2.png "Chart of sample ranges")
+
+Based on the $\bar{x}$-chart and $R$-chart, the process appears to be within
+control. Neither chart exhibits an identifiable pattern, and no observation is
+outside the range determined by its upper control or lower control bound.
 
 ## Question 2
 
