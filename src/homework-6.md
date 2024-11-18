@@ -197,20 +197,20 @@ $$z=\Phi^{-1}\left(1-\frac{1-99.90\%}{2}\right)=\Phi^{-1}(99.95\%)\approx 3.2905
 
 **Lower specification limit.**
 
-$$\bar{x}-z\sigma\approx 5\text{ in}-(1.7412\dots\text{ in})\approx 3.2588\dots\text{in}.$$
+$$\bar{x}-z\sigma_x\approx 5\text{ in}-(1.7412\dots\text{ in})\approx 3.2588\dots\text{in}.$$
 
 **Upper specification limit.**
 
-$$\bar{x}+z\sigma\approx 5\text{ in}+(1.7412\dots\text{ in})\approx 6.7412\dots\text{in}.$$
+$$\bar{x}+z\sigma_x\approx 5\text{ in}+(1.7412\dots\text{ in})\approx 6.7412\dots\text{in}.$$
 
 ### Question 3 Part B
 
 > Calculate $C_p$ and $C_{pk}$ for the process.
 
-$$C_p=\frac{(\bar{x}+z\sigma)-(\bar{x}-z\sigma)}{6\sigma}=\frac{z}{3}\approx1.0968\dots$$
+$$C_p=\frac{(\bar{x}+z\sigma_x)-(\bar{x}-z\sigma_x)}{6\sigma_x}=\frac{z}{3}\approx1.0968\dots$$
 
 $$\begin{align*}C_{pk}&=
-\min\left(\frac{(\bar{x}+z\sigma)-\bar{x}}{3\sigma},\frac{\bar{x}-(\bar{x}-z\sigma)}{3\sigma}\right)\\
+\min\left(\frac{(\bar{x}+z\sigma_x)-\bar{x}}{3\sigma_x},\frac{\bar{x}-(\bar{x}-z\sigma_x)}{3\sigma_x}\right)\\
 &=\min\left(\frac{z}{3},\frac{z}{3}\right)\\
 &=\frac{z}{3}\\
 &=C_p.
