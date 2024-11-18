@@ -182,7 +182,7 @@ $$\bar{x}=5\text{ in}.$$
 
 **Variance.**
 
-$$\sigma^2_{x}=0.28\text{ in}^2$$
+$$\sigma^2_{x}=0.28\text{ in}^2.$$
 
 **Standard deviation.**
 
